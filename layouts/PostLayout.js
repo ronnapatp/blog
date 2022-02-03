@@ -103,7 +103,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               ></Script>
               <div
                 className="fb-comments"
-                data-href={discussUrl(slug)}
+                data-href={`${siteMetadata.siteUrl}/blog/${slug}`}
                 data-width="100%"
                 data-numposts="5"
               ></div>
