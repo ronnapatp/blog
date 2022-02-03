@@ -4,6 +4,7 @@ import SectionContainer from '@/components/SectionContainer'
 import { BlogSEO } from '@/components/SEO'
 import siteMetadata from '@/data/siteMetadata'
 import formatDate from '@/lib/utils/formatDate'
+import Script from 'next/script'
 
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
   const { date, title } = frontMatter
@@ -58,6 +59,21 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   </div>
                 )}
               </div>
+              <div id="fb-root"></div>
+              <Script
+                script
+                async
+                defer
+                crossorigin="anonymous"
+                src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0&appId=1210970696063565&autoLogAppEvents=1"
+                nonce="wHyRVALN"
+              ></Script>
+              <div
+                className="fb-comments"
+                data-href={`${siteMetadata.siteUrl}/blog/${next.slug}`}
+                data-width="100%"
+                data-numposts="5"
+              ></div>
             </footer>
           </div>
         </div>
