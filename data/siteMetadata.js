@@ -8,8 +8,6 @@ const siteMetadata = {
   siteUrl: 'https://blog.ronnapat.com',
   siteRepo: 'https://github.com/ronnapatp/blog',
   siteLogo: '/static/images/logo.png',
-  image: '/static/images/avatar.png',
-  socialBanner: '/static/images/twitter-card.png',
   email: 'me@ronnapat.com',
   github: 'https://github.com/ronnapatp',
   twitter: 'https://twitter.com/ronnapatp',
