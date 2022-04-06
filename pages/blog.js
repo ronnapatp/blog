@@ -26,6 +26,15 @@ export default function Blog({ posts, initialDisplayPosts, pagination }) {
         pagination={pagination}
         title="All Posts"
       />
+
+      <ins
+        className="adsbygoogle block"
+        data-ad-format="fluid"
+        data-ad-layout-key="-gw-3+1f-3d+2z"
+        data-ad-client="ca-pub-1196910141338252"
+        data-ad-slot="3634605013"
+      ></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </>
   )
 }
