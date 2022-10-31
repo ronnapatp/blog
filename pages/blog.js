@@ -26,20 +26,6 @@ export default function Blog({ posts, initialDisplayPosts, pagination }) {
         pagination={pagination}
         title="All Posts"
       />
-      <script
-        async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1196910141338252"
-        crossOrigin="anonymous"
-      ></script>
-      <ins
-        className="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-1196910141338252"
-        data-ad-slot="8233499034"
-        data-ad-format="auto"
-        data-full-width-responsive="true"
-      ></ins>
-      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </>
   )
 }

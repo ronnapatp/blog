@@ -30,11 +30,6 @@ export default function App({ Component, pageProps }) {
         nonce="wHyRVALN"
       ></Script>
       <Analytics />
-      <script
-        async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1196910141338252"
-        crossOrigin="anonymous"
-      ></script>
       <LayoutWrapper>
         <Component {...pageProps} />
       </LayoutWrapper>

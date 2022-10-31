@@ -3,7 +3,6 @@ import PageTitle from '@/components/PageTitle'
 import generateRss from '@/lib/generate-rss'
 import { MDXLayoutRenderer } from '@/components/MDXComponents'
 import { formatSlug, getAllFilesFrontMatter, getFileBySlug, getFiles } from '@/lib/mdx'
-import Ads from '../../components/ads'
 
 const DEFAULT_LAYOUT = 'PostLayout'
 
@@ -48,17 +47,16 @@ export default function Blog({ post, authorDetails, prev, next }) {
     <>
       {frontMatter.draft !== true ? (
         <div>
-        <MDXLayoutRenderer
-          layout={frontMatter.layout || DEFAULT_LAYOUT}
-          toc={toc}
-          mdxSource={mdxSource}
-          frontMatter={frontMatter}
-          authorDetails={authorDetails}
-          prev={prev}
-          next={next}
+          <MDXLayoutRenderer
+            layout={frontMatter.layout || DEFAULT_LAYOUT}
+            toc={toc}
+            mdxSource={mdxSource}
+            frontMatter={frontMatter}
+            authorDetails={authorDetails}
+            prev={prev}
+            next={next}
           />
-          <Ads />
-          </div>
+        </div>
       ) : (
         <div className="mt-24 text-center">
           <PageTitle>
