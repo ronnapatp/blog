@@ -17,7 +17,7 @@ const siteMetadata = {
   analytics: {
     // supports plausible, simpleAnalytics, umami or googleAnalytics
     plausibleDataDomain: 'blog.ronnapat.com', // e.g. tailwind-nextjs-starter-blog.vercel.app
-    simpleAnalytics: false, // true or false
+    simpleAnalytics: true, // true or false
     umamiWebsiteId: '', // e.g. 123e4567-e89b-12d3-a456-426614174000
     googleAnalyticsId: 'G-YFPY7KW0YY', // e.g. UA-000000-2 or G-XXXXXXX
   },
