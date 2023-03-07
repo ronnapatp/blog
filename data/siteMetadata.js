@@ -11,7 +11,6 @@ const siteMetadata = {
   email: 'me@ronnapat.com',
   github: 'https://github.com/ronnapatp',
   twitter: 'https://twitter.com/ronnapatp',
-  facebook: 'https://facebook.com/pieronnapatp',
   youtube: 'https://youtube.com/channel/UCkfQXz1KN3epnBzSCwh9VLg',
   locale: 'en-US',
   analytics: {
