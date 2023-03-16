@@ -12,7 +12,7 @@ const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
-  const { slug, fileName, date, title, tags } = frontMatter
+  const { slug, fileName, date, title, tags, pdf } = frontMatter
 
   return (
     <SectionContainer>
@@ -90,6 +90,14 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                 </Link>
                 {` • `}
                 <Link href={editUrl(fileName)}>{'View on GitHub'}</Link>
+                {` • `}
+                <Link
+                  href={`https://www.facebook.com/sharer/sharer.php?u=${siteMetadata.siteUrl}/blog/${slug}`}
+                >
+                  {'Share on Facebook'}
+                </Link>
+                {` • `}
+                <Link href={`https://file.ronnapat.me/${pdf}`}>{'Download PDF'}</Link>
               </div>
               <div id="fb-root"></div>
               <Script
