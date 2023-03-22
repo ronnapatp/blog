@@ -10,8 +10,6 @@ const siteMetadata = {
   siteLogo: '/static/images/logo.png',
   email: 'me@ronnapat.com',
   github: 'https://github.com/ronnapatp',
-  twitter: 'https://twitter.com/ronnapatp',
-  youtube: 'https://youtube.com/channel/UCkfQXz1KN3epnBzSCwh9VLg',
   locale: 'en-US',
   analytics: {
     // supports plausible, simpleAnalytics, umami or googleAnalytics
@@ -19,11 +17,6 @@ const siteMetadata = {
     simpleAnalytics: true, // true or false
     umamiWebsiteId: '', // e.g. 123e4567-e89b-12d3-a456-426614174000
     googleAnalyticsId: 'G-YFPY7KW0YY', // e.g. UA-000000-2 or G-XXXXXXX
-  },
-  newsletter: {
-    // supports mailchimp, buttondown, convertkit, klaviyo
-    // Please add your .env file and modify it according to your selection
-    provider: 'buttondown',
   },
 }
 

@@ -5,6 +5,7 @@ import SectionContainer from './SectionContainer'
 import Footer from './Footer'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
+import Image from 'next/image'
 
 const LayoutWrapper = ({ children }) => {
   return (
@@ -15,7 +16,13 @@ const LayoutWrapper = ({ children }) => {
             <Link href="/" aria-label={siteMetadata.headerTitle}>
               <div className="flex items-center justify-between">
                 <div className="mr-3">
-                  <img src="https://ronnapat.com/logo-no-bg.png" width="45" />
+                  <Image
+                    src="https://ronnapat.com/logo-no-bg.png"
+                    alt="Logo"
+                    width={45}
+                    height={45}
+                    className="dark:bg-slate-200 rounded-full"
+                  />
                 </div>
                 {typeof siteMetadata.headerTitle === 'string' ? (
                   <div className="hidden h-6 text-2xl font-semibold sm:block">
