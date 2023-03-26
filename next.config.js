@@ -54,7 +54,7 @@ const securityHeaders = [
 
 module.exports = withBundleAnalyzer({
   images: {
-    domains: ['ronnapat.com', 'lh3.googleusercontent.com'],
+    domains: ['ronnapat.com', 'lh3.googleusercontent.com', 'file.ronnapat.me'],
   },
   reactStrictMode: true,
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],

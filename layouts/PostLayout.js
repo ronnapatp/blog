@@ -4,7 +4,7 @@ import SectionContainer from '@/components/SectionContainer'
 import { BlogSEO } from '@/components/SEO'
 import Image from '@/components/Image'
 import Tag from '@/components/Tag'
-import siteMetadata from '@/data/siteMetadata'
+import siteMetadata, { description } from '@/data/siteMetadata'
 import Script from 'next/script'
 
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
@@ -12,7 +12,7 @@ const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
-  const { slug, fileName, date, title, tags, pdf } = frontMatter
+  const { slug, fileName, date, title, tags, pdf, summary, images } = frontMatter
 
   return (
     <SectionContainer>
@@ -29,15 +29,17 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                 <div>
                   <dt className="sr-only">Published on</dt>
                   <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+                    <span className="text-black dark:text-white font-bold">Published on </span>
                     <time dateTime={date}>
                       {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
                     </time>
                   </dd>
                 </div>
               </dl>
-              <div>
+              <div className="pb-5">
                 <PageTitle>{title}</PageTitle>
               </div>
+              <span className="text-gray-500 dark:text-gray-400 text-xl">{summary}</span>
             </div>
           </header>
           <div
