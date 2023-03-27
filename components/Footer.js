@@ -22,10 +22,7 @@ export default function Footer() {
           <Link href="https://github.com/timlrx/tailwind-nextjs-starter-blog">
             Tailwind Nextjs Theme
           </Link>{' '}
-          with{' '}
-          <Link href="https://fonts.google.com/specimen/Charis+SIL?category=Serif">
-            Charis SIL font
-          </Link>
+          with <Link href="https://www.cdnfonts.com/georgia.font">Georgia font</Link>
         </div>
       </div>
     </footer>

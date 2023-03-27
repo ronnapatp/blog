@@ -16,7 +16,7 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        sans: ['Charis SIL', ...defaultTheme.fontFamily.sans],
+        sans: ['Georgia', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         gray: colors.neutral,

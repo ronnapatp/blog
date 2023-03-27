@@ -9,10 +9,8 @@ class MyDocument extends Document {
           <meta name="theme-color" content="#000000" />
           <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Charis+SIL&display=swap"
-            rel="stylesheet"
-          />
+          <link href="https://fonts.cdnfonts.com/css/georgia" rel="stylesheet" />
+
           <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css"
