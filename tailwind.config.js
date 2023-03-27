@@ -26,11 +26,11 @@ module.exports = {
           css: {
             color: theme('colors.gray.700'),
             a: {
-              color: theme('colors.sky.500'),
+              color: theme('colors.red.500'),
               '&:hover': {
-                color: `${theme('colors.sky.600')} !important`,
+                color: `${theme('colors.red.600')} !important`,
               },
-              code: { color: theme('colors.sky.400') },
+              code: { color: theme('colors.red.400') },
             },
             h1: {
               fontWeight: '700',
@@ -94,11 +94,11 @@ module.exports = {
           css: {
             color: theme('colors.gray.300'),
             a: {
-              color: theme('colors.sky.500'),
+              color: theme('colors.red.500'),
               '&:hover': {
-                color: `${theme('colors.sky.400')} !important`,
+                color: `${theme('colors.red.400')} !important`,
               },
-              code: { color: theme('colors.sky.400') },
+              code: { color: theme('colors.red.400') },
             },
             h1: {
               fontWeight: '700',

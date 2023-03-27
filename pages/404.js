@@ -14,7 +14,7 @@ export default function FourZeroFour() {
         </p>
         <p className="mb-8">But dont worry, you can find plenty of other things on our homepage.</p>
         <Link href="/">
-          <button className="inline px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-sky-600 border border-transparent rounded-lg shadow focus:outline-none focus:shadow-outline-sky hover:bg-sky-700 dark:hover:bg-blue-500">
+          <button className="inline px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-red-600 border border-transparent rounded-lg shadow focus:outline-none focus:shadow-outline-red hover:bg-red-700 dark:hover:bg-blue-500">
             Back to homepage
           </button>
         </Link>
