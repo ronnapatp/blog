@@ -12,13 +12,17 @@
 /.next/
 /out/
 public/sitemap.xml
+public/sitemap.rss
 .vercel
 
 # production
 /build
+*.rss
 *.xml
 # rss feed
 /public/feed.xml 
+/public/feed.rss
+
 
 # misc
 .DS_Store
