@@ -26,7 +26,7 @@ const siteMetadata = require('../data/siteMetadata')
                   .replace('.js', '')
                   .replace('.mdx', '')
                   .replace('.md', '')
-                  .replace('/feed.rss', '')
+                  .replace('/feed.xml', '')
                 const route = path === '/index' ? '' : path
                 if (page === `pages/404.js` || page === `pages/blog/[...slug].js`) {
                   return
@@ -47,5 +47,5 @@ const siteMetadata = require('../data/siteMetadata')
   })
 
   // eslint-disable-next-line no-sync
-  fs.writeFileSync('public/sitemap.rss', formatted)
+  fs.writeFileSync('public/sitemap.xml', formatted)
 })()
