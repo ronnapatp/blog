@@ -58,7 +58,7 @@ export const TagSEO = ({ title, description }) => {
       <Head>
         <link
           rel="alternate"
-          type="application/rss+xml"
+          type="application/rss"
           title={`${description} - RSS feed`}
           href={`${siteMetadata.siteUrl}${router.asPath}/feed.xml`}
         />

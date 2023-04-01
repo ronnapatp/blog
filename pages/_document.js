@@ -7,7 +7,7 @@ class MyDocument extends Document {
           <link rel="icon" href="https://ronnapat.com/favicon.ico" />
           <meta name="msapplication-TileColor" content="#000000" />
           <meta name="theme-color" content="#000000" />
-          <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+          <link rel="alternate" type="application/rss" href="/feed.xml" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
           <link href="https://fonts.cdnfonts.com/css/georgia" rel="stylesheet" />
 
